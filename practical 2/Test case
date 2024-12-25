@@ -1,0 +1,139 @@
+DFA1:
+Enter number of input symbols:
+2
+Enter symbol 1:
+a
+Enter symbol 2:
+b
+Enter number of states:
+4
+Enter initial state (1 to 4):
+1
+Enter number of final states:
+1
+Enter final state 1 (1 to 4):
+2
+Define the transition table:
+From state 1 with input 'a', go to state (1 to 4):
+2
+From state 1 with input 'b', go to state (1 to 4):
+3
+From state 2 with input 'a', go to state (1 to 4):
+1
+From state 2 with input 'b', go to state (1 to 4):
+4
+From state 3 with input 'a', go to state (1 to 4):
+4
+From state 3 with input 'b', go to state (1 to 4):
+1
+From state 4 with input 'a', go to state (1 to 4):
+3
+From state 4 with input 'b', go to state (1 to 4):
+2
+Enter the input string:
+abbabab
+Valid String
+
+**DFA2: 0 followed by 11**
+Enter number of input symbols:
+2
+Enter symbol 1:
+0
+Enter symbol 2:
+1
+Enter number of states:
+4
+Enter initial state (1 to 4):
+1
+Enter number of final states:
+1
+Enter final state 1 (1 to 4):
+3
+Define the transition table:
+From state 1 with input '0', go to state (1 to 4):
+1
+From state 1 with input '1', go to state (1 to 4):
+2
+From state 2 with input '0', go to state (1 to 4):
+4
+From state 2 with input '1', go to state (1 to 4):
+3
+From state 3 with input '0', go to state (1 to 4):
+1
+From state 3 with input '1', go to state (1 to 4):
+3
+From state 4 with input '0', go to state (1 to 4):
+4
+From state 4 with input '1', go to state (1 to 4):
+4
+Enter the input string:
+0110111
+Valid String
+
+**DFA3: start and end symbol same**
+Enter number of input symbols:
+3
+Enter symbol 1:
+a
+Enter symbol 2:
+b
+Enter symbol 3:
+c
+Enter number of states:
+7
+Enter initial state (1 to 7):
+1
+Enter number of final states:
+3
+Enter final state 1 (1 to 7):
+5
+Enter final state 2 (1 to 7):
+6
+Enter final state 3 (1 to 7):
+7
+Define the transition table:
+From state 1 with input 'a', go to state (1 to 7):
+2
+From state 1 with input 'b', go to state (1 to 7):
+3
+From state 1 with input 'c', go to state (1 to 7):
+4
+From state 2 with input 'a', go to state (1 to 7):
+5
+From state 2 with input 'b', go to state (1 to 7):
+2
+From state 2 with input 'c', go to state (1 to 7):
+2
+From state 3 with input 'a', go to state (1 to 7):
+3
+From state 3 with input 'b', go to state (1 to 7):
+6
+From state 3 with input 'c', go to state (1 to 7):
+3
+From state 4 with input 'a', go to state (1 to 7):
+4
+From state 4 with input 'b', go to state (1 to 7):
+4
+From state 4 with input 'c', go to state (1 to 7):
+7
+From state 5 with input 'a', go to state (1 to 7):
+5
+From state 5 with input 'b', go to state (1 to 7):
+2
+From state 5 with input 'c', go to state (1 to 7):
+2
+From state 6 with input 'a', go to state (1 to 7):
+3
+From state 6 with input 'b', go to state (1 to 7):
+6
+From state 6 with input 'c', go to state (1 to 7):
+3
+From state 7 with input 'a', go to state (1 to 7):
+4
+From state 7 with input 'b', go to state (1 to 7):
+4
+From state 7 with input 'c', go to state (1 to 7):
+7
+Enter the input string:
+bacabcbabb
+Valid String
