@@ -1,0 +1,31 @@
+test cases:
+input: ^
+output: Invalid String
+
+input: bbbb
+output: Invalid String 
+
+input: aaa
+output: Invalid String
+
+input: bbaaabb
+output: Invalid String
+
+input: aaabbb
+output: Invalid String
+
+input: baaabb
+output: Invalid String
+
+input: aaaab
+output: Invalid String
+
+input: abbabb
+output: Invalid String
+
+input: abb
+output: valid String
+
+input: aaaaabbdfa
+output: Invalid String
+
