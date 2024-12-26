@@ -137,3 +137,9 @@ From state 7 with input 'c', go to state (1 to 7):
 Enter the input string:
 bacabcbabb
 Valid String
+
+
+**3rd test case**
+Enter the input string:
+afvgb1
+Valid String
