@@ -5,7 +5,11 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.List;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Scanner;
 // import java.util.regex.*;
 
 public class Main {
@@ -113,10 +117,57 @@ public class Main {
             continue;
         }
 
+        // Detect operators
+        boolean matchedOperator = false;
+        for (String op : operators) {
+            if (input.startsWith(op, index)) {
+                System.out.println("Operator: " + op);
+                index += op.length();
+                matchedOperator = true;
+                break;
+            }
+        }
+        if (matchedOperator) continue;
+
+         // Detect punctuation
+         if (punctuations.contains(String.valueOf(currentChar))) {
+            System.out.println("Punctuation: " + currentChar);
+            index++;
+            continue;
+        }
+
+        // Handle unknown characters
+        errors.add("Error: Unknown token " + currentChar);
+        index++;
+
+        // Display errors
+        if (!errors.isEmpty()) {
+            for (String error : errors) {
+                System.out.println(error);
+            }
+        }
 
     }
+
+}
     public static void main(String[] args) {
-        
-    }
+        String filePath = "practical 3/file.c";
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            System.out.println("Lexical Analysis Output:");
+            while ((line = reader.readLine()) != null) {
+                analyzer(line);
+            }
+
+            // Display Symbol Table
+            System.out.println("\nSymbol Table:");
+            for (Map.Entry<String, String> entry : symbolTable.entrySet()) {
+                System.out.println("Identifier: " + entry.getKey() + ", Type: " + entry.getValue());
+            }
+        }
+        catch (IOException e) {
+            System.out.println("Error reading file: " + e.getMessage());
+        }
 }
 }
