@@ -147,7 +147,7 @@ public class LexicalAnalyzer {
     }
 
     public static void main(String[] args) {
-        String filePath = "practical 3/file1.c";
+        String filePath = "practical 3/file3.c";
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
