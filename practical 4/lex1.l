@@ -1,9 +1,9 @@
-//defination
+%{
+    #include<stdio.h>
+    #include<string.h>
+    int i =0 ;
 
-    
-.    ECHO;
-    
-\n  ECHO;
-
+}%
 
 %%
+
